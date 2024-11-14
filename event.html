@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event</title>
+        <link rel="stylesheet" href="vendor/css/all.min.css">
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/css/owl.carousel.css">
+        <link rel="stylesheet" href="vendor/css/owl.theme.css">
+        <link rel="stylesheet" href="vendor/css/lightbox.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/event.css">
+    </head>
+    <body>
+
+
+
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid justify-content-start">
+                <a class="navbar-brand fredoka-font" href="index.html">
+                    <img src="assets/images/logo.png" class="logo ">
+
+                </a>
+
+                <div class="search d-none d-lg-block d-flex align-items-center
+                    bg-gray p-2 rounded-pill ms-5">
+                    <i class="fa-solid fa-magnifying-glass ms-2 text-secondary"></i>
+                    <input type="search" class="bg-transparent border-0 mx-sm-2"
+                        placeholder="Start typing to search..">
+                </div>
+
+                <div class="first-list d-none d-xl-block"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page"
+                                href="index.html">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="stories.html">
+                                <i class="fa-solid fa-bolt"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="video.html">
+                                <i class="fa-solid fa-video"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active " href="user.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopping.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="second-list d-none d-lg-block ms-auto"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative"
+                                aria-current="page" href="#">
+                                <i class="fa-solid fa-bell position-relative " onclick="showDropdown()"></i>
+                                <span class="p-1 rounded-circle bg-warning
+                                    position-absolute"></span>
+                                    <div id="dropdown" class="drop" style="display: none;">
+                                       <p>Notification</p>
+                                        <ul>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-8.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2"> Hurin Seary</h3>
+                                                <span class="ms-auto ">2:20 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-7.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">Victor Exrixon</h3>
+                                                <span class="ms-auto ">3:28 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-6.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">
+                                                    Surfiya Zakir</h3>
+                                                <span class="ms-auto ">4:17 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-5.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">Goria Coast</h3>
+                                                <span class="ms-auto ">1:33 am</span>
+                                            </li>
+                                        </ul>
+                                      </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-message message-btn"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-gear infinite-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="third-list d-block d-lg-none ms-auto"
+                    id="navbarSupportedContent">
+                    <ul class="list-unstyled me-auto mb-2 mb-lg-0 d-flex
+                        align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative"
+                                aria-current="page" href="#">
+                                <i class="fa-solid fa-bell position-relative " onclick="showDropdown2()"></i>
+                                <span class="p-1 ms-3 mb-4 rounded-circle bg-warning
+                                    position-absolute"></span>
+                                    <div id="dropdown2" class="drop2" style="display: none;">
+                                       <p>Notification</p>
+                                        <ul>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-8.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2"> Hurin Seary</h3>
+                                                <span class="ms-auto ">2:20 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-7.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">Victor Exrixon</h3>
+                                                <span class="ms-auto ">3:28 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-6.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">
+                                                    Surfiya Zakir</h3>
+                                                <span class="ms-auto ">4:17 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-5.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">Goria Coast</h3>
+                                                <span class="ms-auto ">1:33 am</span>
+                                            </li>
+                                        </ul>
+                                      </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="#">
+                                <i class="fa-regular fa-comment message-btn"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="video.html">
+                                <i class="fa-solid fa-video"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button class="offcanva-btn border-0
+                                    position-relative" type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasExample"
+                                    aria-controls="offcanvasExample">
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-start d-block d-lg-none"
+        data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body">
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">new feeds</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="index.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-tv bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Newsfeed</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="badg.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-award bg-red-gradiant"></i>
+                            <h3 class="ms-3">Bades</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="stories.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-globe bg-gold-gradiant "></i>
+                            <h3 class="ms-3">Explore Stories</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="user.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-bolt bg-mini-gradiant"></i>
+                            <h3 class="ms-3">Popular Groups</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="profile.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-regular fa-user bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Author Profile</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">more pages</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="email.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-inbox"></i>
+                            <h3 class="ms-3">Email Box</h3>
+                            <span class="bg-warning text-white ms-auto px-2
+                                py-1 rounded">
+                                584
+                            </span>
+                        </a>
+                    </li>
+
+
+
+  
+                    <li class="mb-3">
+                        <a href="event.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="ms-3">Latest Events</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="shopping.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <h3 class="ms-3">Shop</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="video.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h3 class="ms-3">Live Stream</h3>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">account</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="settings.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <h3 class="ms-3">Settings</h3>
+                        </a>
+                    </li>
+
+                    <li class="mb-3">
+                        <a href="#" class="d-flex
+                            align-items-center">
+                            <i class="fa-regular fa-message"></i>
+                            <h3 class="ms-3 message-btn">Chat</h3>
+                            <span class="bg-warning text-white ms-auto px-2
+                                py-1 rounded">
+                                23
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- start sidebar -->
+    <aside class="sidebar position-fixed d-none d-lg-block">
+        <div class="p-3">
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">new feeds</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="index.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-tv bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Newsfeed</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="badg.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-award bg-red-gradiant"></i>
+                            <h3 class="ms-3">Bades</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="stories.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-globe bg-gold-gradiant "></i>
+                            <h3 class="ms-3">Explore Stories</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="user.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-bolt bg-mini-gradiant"></i>
+                            <h3 class="ms-3">Popular Groups</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="profile.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-regular fa-user bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Author Profile</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">more pages</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="email.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-inbox"></i>
+                            <h3 class="ms-3">Email Box</h3>
+                            <span class="bg-warning text-white ms-auto px-2
+                                py-1 rounded">
+                                584
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="mb-3">
+                        <a href="event.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="ms-3">Latest Events</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="video.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h3 class="ms-3">Live Stream</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="shopping.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <h3 class="ms-3">Shop</h3>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">account</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="settings.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <h3 class="ms-3">Settings</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <div class="d-flex message-btn
+                            align-items-center">
+                            <i class="fa-regular fa-message message-btn"></i>
+                            <h3 class="ms-3">Chat</h3>
+                            <span class="bg-warning text-white ms-auto px-2
+                                py-1 rounded">
+                                23
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+        <!-- end sidebar -->
+    
+        <!--  main-content -->
+        <section class="main-content >
+            <div class="container-fluid container-lg ">
+              
+                    <div class="row ">
+                        <div class="col-xl-10 mt-4 py-5 m-auto shadow">
+                            <div class="card w-100 border-0 shadow-none rounded-xxl border-0 mb-3 overflow-hidden ">
+                                <div class="map">
+                                    <div class="iframmap">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14031.398471114703!2d-96.8989898!3d32.8233331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9a6a4f2f8b1cfc0!2sGoogle!5e0!3m2!1sen!2sus!4v1613243775861!5m2!1sen!2sus" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="100%" height="500" frameborder="0"></iframe>
+                                         </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 pe-2 ps-2">
+                                    <div class="card p-3 bg-white w-100 hover-card border-0 shadow-xss rounded-xxl border-0 mb-3 overflow-hidden ">
+                                        <div class="card-image w-100">
+                                            <img src="assets/images/e-1.jpg" alt="event" class="w-100 rounded-3">
+                                        </div>
+                                        <div class="card-body d-flex ps-0 pe-0 pb-0">
+                                            <div class="bg-greylight me-3 p-3 border-light-md rounded-xxl theme-dark-bg"><h4 class="fw-700 font-lg ls-3 text-grey-900 mb-0">
+                                                <span class="ls-3 d-block font-xsss text-grey-500 fw-500">FEB</span>22</h4></div>
+                                            <h2 class="fw-700 lh-3 font-xss">Right here Right Now -  Comedy 
+                                                <span class="d-flex font-xssss fw-500 mt-2 lh-3 text-gray"> <i class="fa-solid fa-location-dot text-gray me-2"></i> Goa, Mumbai </span>
+                                            </h2>
+                                        </div>
+                                        <div class="card-body d-flex p-0">
+                                            <ul class="list-unstyled d-flex
+                                            align-items-center mt-3">
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-6.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-5.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-4.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-8.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <a href="#" class="w35 text-gray bg-gray
+                                                    d-flex align-items-center
+                                                    justify-content-center font-xss
+                                                    fw-600">+2</a>
+                                            </li>
+                                         
+        
+                                        </ul>
+                                            <a href="#" class="app text-white ">APPLY</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="col-lg-4 col-md-6 pe-2 ps-2">
+                                    <div class="card p-3 bg-white w-100 hover-card border-0 shadow-xss rounded-xxl border-0 mb-3 overflow-hidden ">
+                                        <div class="card-image w-100">
+                                            <img src="assets/images/e-2.jpg" alt="event" class="w-100 rounded-3">
+                                        </div>
+                                        <div class="card-body d-flex ps-0 pe-0 pb-0">
+                                            <div class="bg-greylight me-3 p-3 border-light-md rounded-xxl theme-dark-bg"><h4 class="fw-700 font-lg ls-3 text-grey-900 mb-0">
+                                                <span class="ls-3 d-block font-xsss text-grey-500 fw-500">FEB</span>22</h4></div>
+                                            <h2 class="fw-700 lh-3 font-xss">Right here Right Now -  Comedy 
+                                                <span class="d-flex font-xssss fw-500 mt-2 lh-3 text-gray"> <i class="fa-solid fa-location-dot text-gray me-2"></i> Goa, Mumbai </span>
+                                            </h2>
+                                        </div>
+                                        <div class="card-body d-flex p-0">
+                                            <ul class="list-unstyled d-flex
+                                            align-items-center mt-3">
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-6.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-5.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-4.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-8.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <a href="#" class="w35 text-gray bg-gray
+                                                    d-flex align-items-center
+                                                    justify-content-center font-xss
+                                                    fw-600">+2</a>
+                                            </li>
+                                         
+        
+                                        </ul>
+                                            <a href="#" class="app text-white ">APPLY</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pe-2 ps-2">
+                                    <div class="card p-3 bg-white w-100 hover-card border-0 shadow-xss rounded-xxl border-0 mb-3 overflow-hidden ">
+                                        <div class="card-image w-100">
+                                            <img src="assets/images/e-5.jpg" alt="event" class="w-100 rounded-3">
+                                        </div>
+                                        <div class="card-body d-flex ps-0 pe-0 pb-0">
+                                            <div class="bg-greylight me-3 p-3 border-light-md rounded-xxl theme-dark-bg"><h4 class="fw-700 font-lg ls-3 text-grey-900 mb-0">
+                                                <span class="ls-3 d-block font-xsss text-grey-500 fw-500">FEB</span>22</h4></div>
+                                            <h2 class="fw-700 lh-3 font-xss">Right here Right Now -  Comedy 
+                                                <span class="d-flex font-xssss fw-500 mt-2 lh-3 text-gray"> <i class="fa-solid fa-location-dot text-gray me-2"></i> Goa, Mumbai </span>
+                                            </h2>
+                                        </div>
+                                        <div class="card-body d-flex p-0">
+                                            <ul class="list-unstyled d-flex
+                                            align-items-center mt-3">
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-6.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-5.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-4.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-8.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <a href="#" class="w35 text-gray bg-gray
+                                                    d-flex align-items-center
+                                                    justify-content-center font-xss
+                                                    fw-600">+2</a>
+                                            </li>
+                                         
+        
+                                        </ul>
+                                            <a href="#" class="app text-white ">APPLY</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pe-2 ps-2">
+                                    <div class="card p-3 bg-white w-100 hover-card border-0 shadow-xss rounded-xxl border-0 mb-3 overflow-hidden ">
+                                        <div class="card-image w-100">
+                                            <img src="assets/images/e-6.jpg" alt="event" class="w-100 rounded-3">
+                                        </div>
+                                        <div class="card-body d-flex ps-0 pe-0 pb-0">
+                                            <div class="bg-greylight me-3 p-3 border-light-md rounded-xxl theme-dark-bg"><h4 class="fw-700 font-lg ls-3 text-grey-900 mb-0">
+                                                <span class="ls-3 d-block font-xsss text-grey-500 fw-500">FEB</span>22</h4></div>
+                                            <h2 class="fw-700 lh-3 font-xss">Right here Right Now -  Comedy 
+                                                <span class="d-flex font-xssss fw-500 mt-2 lh-3 text-gray"> <i class="fa-solid fa-location-dot text-gray me-2"></i> Goa, Mumbai </span>
+                                            </h2>
+                                        </div>
+                                        <div class="card-body d-flex p-0">
+                                            <ul class="list-unstyled d-flex
+                                            align-items-center mt-3">
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-6.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-5.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-4.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-8.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <a href="#" class="w35 text-gray bg-gray
+                                                    d-flex align-items-center
+                                                    justify-content-center font-xss
+                                                    fw-600">+2</a>
+                                            </li>
+                                         
+        
+                                        </ul>
+                                            <a href="#" class="app text-white ">APPLY</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                  <div class="col-lg-4 col-md-6 pe-2 ps-2">
+                                    <div class="card p-3 bg-white w-100 hover-card border-0 shadow-xss rounded-xxl border-0 mb-3 overflow-hidden ">
+                                        <div class="card-image w-100">
+                                            <img src="assets/images/e-3.jpg" alt="event" class="w-100 rounded-3">
+                                        </div>
+                                        <div class="card-body d-flex ps-0 pe-0 pb-0">
+                                            <div class="bg-greylight me-3 p-3 border-light-md rounded-xxl theme-dark-bg"><h4 class="fw-700 font-lg ls-3 text-grey-900 mb-0">
+                                                <span class="ls-3 d-block font-xsss text-grey-500 fw-500">FEB</span>22</h4></div>
+                                            <h2 class="fw-700 lh-3 font-xss">Right here Right Now -  Comedy 
+                                                <span class="d-flex font-xssss fw-500 mt-2 lh-3 text-gray"> <i class="fa-solid fa-location-dot text-gray me-2"></i> Goa, Mumbai </span>
+                                            </h2>
+                                        </div>
+                                        <div class="card-body d-flex p-0">
+                                            <ul class="list-unstyled d-flex
+                                            align-items-center mt-3">
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-6.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-5.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-4.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-8.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <a href="#" class="w35 text-gray bg-gray
+                                                    d-flex align-items-center
+                                                    justify-content-center font-xss
+                                                    fw-600">+2</a>
+                                            </li>
+                                         
+        
+                                        </ul>
+                                            <a href="#" class="app text-white ">APPLY</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 pe-2 ps-2">
+                                    <div class="card p-3 bg-white w-100 hover-card border-0 shadow-xss rounded-xxl border-0 mb-3 overflow-hidden ">
+                                        <div class="card-image overflow-hidden w-100">
+                                            <img src="assets/images/e-4.jpg" alt="event" class="w-100 rounded-3">
+                                        </div>
+                                        <div class="card-body d-flex ps-0 pe-0 pb-0">
+                                            <div class="bg-greylight me-3 p-3 border-light-md rounded-xxl theme-dark-bg"><h4 class="fw-700 font-lg ls-3 text-grey-900 mb-0">
+                                                <span class="ls-3 d-block font-xsss text-grey-500 fw-500">FEB</span>22</h4></div>
+                                            <h2 class="fw-700 lh-3 font-xss">Right here Right Now -  Comedy 
+                                                <span class="d-flex font-xssss fw-500 mt-2 lh-3 text-gray"> <i class="fa-solid fa-location-dot text-gray me-2"></i> Goa, Mumbai </span>
+                                            </h2>
+                                        </div>
+                                        <div class="card-body d-flex p-0">
+                                            <ul class="list-unstyled d-flex
+                                            align-items-center mt-3">
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-6.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-5.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-4.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <img
+                                                    src="assets/images/user-8.png"
+                                                    alt="" class="w35">
+                                            </li>
+                                            <li class="w20">
+                                                <a href="#" class="w35 text-gray bg-gray
+                                                    d-flex align-items-center
+                                                    justify-content-center font-xss
+                                                    fw-600">+2</a>
+                                            </li>
+                                         
+        
+                                        </ul>
+                                            <a href="#" class="app text-white ">APPLY</a>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>               
+
+                    </div>
+              
+             
+            </div>
+        </section>
+        <!-- start chat-contact -->
+        <div class="chat-contacts active position-fixed p-3
+            bg-white">
+            <div class="content-card rounded-xxl shadow-xss p-3">
+                <p class="text-uppercase text-gray">contacts</p>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-8.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2"> Hurin Seary</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-7.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2">Victor Exrixon</h3>
+                        <span class="ms-auto rounded-circle p-1 bg-success"></span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-6.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2">
+                            Surfiya Zakir</h3>
+                        <span class="ms-auto rounded-circle p-1 bg-warning"></span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-5.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2">Goria Coast</h3>
+                        <span class="ms-auto rounded-circle p-1 bg-danger"></span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-4.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2">Seary Victor</h3>
+                        <span class="ms-auto rounded-circle p-1 bg-success"></span>
+                    </li>
+
+
+                </ul>
+
+                <p class="text-uppercase text-gray">groups</p>
+                <ul class="list-unstyled">
+
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-blue-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">se</span>
+                        <h3 class="ms-2">Studio Express</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-gold-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">ad</span>
+                        <h3 class="ms-2">Armany Design</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-red-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">de</span>
+                        <h3 class="ms-2">De fabous</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+
+                </ul>
+
+                <p class="text-uppercase text-gray">pages</p>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-blue-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">as</span>
+                        <h3 class="ms-2">Armany Seary</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-gold-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">ei</span>
+                        <h3 class="ms-2">Entropio Inc</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+        <!-- end chat-contact -->
+
+        <!-- bootstrap -->
+        <script src="vendor/js/bootstrap.min.js"></script>
+        <!-- jquery -->
+        <script src="vendor/js/jquery-3.6.4.min.js"></script>
+        <!-- lightbox -->
+        <script src="vendor/js/lightbox.min.js"></script>
+        <!-- owl -->
+        <script src="vendor/js/owl.carousel.min.js"></script>
+        <!-- custmoized -->
+        <script src="assets/js/main.js"></script>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,142 @@
+body{
+    background-color: #f2f2f2;
+}
+.form{
+    width: 500px ;
+   
+    margin: auto;
+    padding: 45px;
+    border-radius: 20px;
+margin-top: 30px;
+margin-bottom: 50px !important;
+box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+}
+a i {
+    font-size: 40px;
+    transform: scaleX(-1);
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    color: #000;
+    background-color: #99aff7;
+    border-radius: 20px;
+    box-shadow: 0 20px 10px -20px rgba(0,0,0,0.45) inset, -20px 0 10px -20px rgba(0,0,0,0.45) inset;
+}
+
+.form label{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+form .add{
+ background-color: #7ff17b;
+}
+form .clr{
+    background-color: #cb514c;
+   }
+   
+   
+#deleteBtn{
+    position: relative;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #cb514c;
+right: 55px;
+    
+}
+#deleteBtn:hover ,.clr:hover{
+    background-color: #8d322f;
+}
+
+img{
+    width: 100px;
+}
+
+
+.update{
+    background-color: #86c9f3;
+}
+.update:hover{
+    background-color: #72a5c5 !important;
+}
+
+
+.form2{
+    position: relative;
+ left: 8%;
+ top: 30px;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+.form2 input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.form2 .fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+.form2 i{
+    font-size: 18px;
+    font-weight: 800;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.form2:hover{
+    width: 200px;
+    cursor: pointer;
+}
+.form2:hover input{
+    display: block;
+}
+.form2:hover .fa{
+    background: #07051a;
+    color: white;
+}
+
+@media screen and (width < 768px) {
+
+    form{
+    width: 300px !important;
+ 
+}
+.divv{
+    display: block !important;
+    text-align: center;
+}
+.form2{
+ margin-left: 150px !important;
+}
+#deleteBtn{
+    margin-left: 120px;
+}
+
+}

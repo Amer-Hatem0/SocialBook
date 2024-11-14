@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>video</title>
+        <link rel="stylesheet" href="vendor/css/all.min.css">
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/css/owl.carousel.css">
+        <link rel="stylesheet" href="vendor/css/owl.theme.css">
+        <link rel="stylesheet" href="vendor/css/lightbox.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/video.css">
+    </head>
+    <body>
+
+
+
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg bg-light fixed-top">
+            <div class="container-fluid justify-content-start">
+                <a class="navbar-brand fredoka-font" href="index.html">
+                    <img src="assets/images/logo.png" class="logo ">
+
+                </a>
+
+                <div class="search d-none d-lg-block d-flex align-items-center
+                    bg-gray p-2 rounded-pill ms-5">
+                    <i class="fa-solid fa-magnifying-glass ms-2 text-secondary"></i>
+                    <input type="search" class="bg-transparent border-0 mx-sm-2"
+                        placeholder="Start typing to search..">
+                </div>
+
+                <div class="first-list d-none d-xl-block"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page"
+                                href="index.html">
+                                <i class="fa-solid fa-house"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stories.html">
+                                <i class="fa-solid fa-bolt"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="video.html">
+                                <i class="fa-solid fa-video"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="user.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shopping.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="second-list d-none d-lg-block ms-auto"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative"
+                                aria-current="page" href="#">
+                                <i class="fa-solid fa-bell position-relative " onclick="showDropdown()"></i>
+                                <span class="p-1 rounded-circle bg-warning
+                                    position-absolute"></span>
+                                    <div id="dropdown" class="drop" style="display: none;">
+                                       <p>Notification</p>
+                                        <ul>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-8.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2"> Hurin Seary</h3>
+                                                <span class="ms-auto ">2:20 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-7.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">Victor Exrixon</h3>
+                                                <span class="ms-auto ">3:28 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-6.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">
+                                                    Surfiya Zakir</h3>
+                                                <span class="ms-auto ">4:17 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-5.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">Goria Coast</h3>
+                                                <span class="ms-auto ">1:33 am</span>
+                                            </li>
+                                        </ul>
+                                      </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-message message-btn"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-gear infinite-rotate"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="third-list d-block d-lg-none ms-auto"
+                    id="navbarSupportedContent">
+                    <ul class="list-unstyled me-auto mb-2 mb-lg-0 d-flex
+                        align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link active position-relative"
+                                aria-current="page" href="#">
+                                <i class="fa-solid fa-bell position-relative " onclick="showDropdown2()"></i>
+                                <span class="p-1 ms-3 mb-4 rounded-circle bg-warning
+                                    position-absolute"></span>
+                                    <div id="dropdown2" class="drop2" style="display: none;">
+                                       <p>Notification</p>
+                                        <ul>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-8.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2"> Hurin Seary</h3>
+                                                <span class="ms-auto ">2:20 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-7.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">Victor Exrixon</h3>
+                                                <span class="ms-auto ">3:28 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-6.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">
+                                                    Surfiya Zakir</h3>
+                                                <span class="ms-auto ">4:17 pm</span>
+                                            </li>
+                                            <li class="ll d-flex align-items-center item mb-2">
+                                                <img src="assets/images/user-5.png" alt="user
+                                                    image" class="w35">
+                                                <h3 class="ms-2">Goria Coast</h3>
+                                                <span class="ms-auto ">1:33 am</span>
+                                            </li>
+                                        </ul>
+                                      </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="#">
+                                <i class="fa-regular fa-comment message-btn"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="video.html">
+                                <i class="fa-solid fa-video"></i>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <button class="offcanva-btn border-0
+                                    position-relative" type="button"
+                                    data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasExample"
+                                    aria-controls="offcanvasExample">
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start d-block d-lg-none"
+        data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body">
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">new feeds</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="index.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-tv bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Newsfeed</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="badg.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-award bg-red-gradiant"></i>
+                            <h3 class="ms-3">Bades</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="stories.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-globe bg-gold-gradiant "></i>
+                            <h3 class="ms-3">Explore Stories</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="user.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-bolt bg-mini-gradiant"></i>
+                            <h3 class="ms-3">Popular Groups</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="profile.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-regular fa-user bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Author Profile</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">more pages</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="email.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-inbox"></i>
+                            <h3 class="ms-3">Email Box</h3>
+                            <span class="bg-warning text-white ms-auto px-2
+                                py-1 rounded">
+                                584
+                            </span>
+                        </a>
+                    </li>
+
+
+
+  
+                    <li class="mb-3">
+                        <a href="event.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="ms-3">Latest Events</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="shopping.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <h3 class="ms-3">Shop</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="video.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h3 class="ms-3">Live Stream</h3>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">account</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="settings.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <h3 class="ms-3">Settings</h3>
+                        </a>
+                    </li>
+
+                    <li class="mb-3">
+                        <a href="#" class="d-flex
+                            align-items-center">
+                            <i class="fa-regular fa-message message-btn"></i>
+                            <h3 class="ms-3 message-btn">Chat</h3>
+                            <span class="bg-warning text-white ms-auto px-2
+                                py-1 rounded">
+                                23
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+
+    <!-- start sidebar -->
+    <aside class="sidebar position-fixed d-none d-lg-block">
+        <div class="p-3">
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">new feeds</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="index.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-tv bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Newsfeed</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="badg.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-award bg-red-gradiant"></i>
+                            <h3 class="ms-3">Bades</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="stories.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-globe bg-gold-gradiant "></i>
+                            <h3 class="ms-3">Explore Stories</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="user.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-bolt bg-mini-gradiant"></i>
+                            <h3 class="ms-3">Popular Groups</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="profile.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-regular fa-user bg-blue-gradiant"></i>
+                            <h3 class="ms-3">Author Profile</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">more pages</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="email.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-inbox"></i>
+                            <h3 class="ms-3">Email Box</h3>
+                            <span class="bg-warning text-white ms-auto px-2
+                                py-1 rounded">
+                                584
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="mb-3">
+                        <a href="event.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h3 class="ms-3">Latest Events</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="video.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h3 class="ms-3">Live Stream</h3>
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a href="shopping.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <h3 class="ms-3">Shop</h3>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="content-card mb-3 p-2 shadow-xss rounded">
+                <p class="text-capitalize text-gray">account</p>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <a href="settings.html" class="d-flex
+                            align-items-center">
+                            <i class="fa-solid fa-gear"></i>
+                            <h3 class="ms-3">Settings</h3>
+                        </a>
+                    </li>
+
+                    <li class="mb-3">
+                        <div class="d-flex message-btn
+                            align-items-center">
+                            <i class="fa-regular message-btn fa-message message-btn"></i>
+                            <h3 class="ms-3 message-btn">Chat</h3>
+                            <span class="bg-warning text-white ms-auto px-2
+                                py-1 rounded">
+                                23
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+        <!-- end sidebar -->
+        <!-- start main-content -->
+        <section class="main-content m-auto col-lg-8 col-xl-10">
+            <div class="container-fluid container-lg">
+                <div class="row mt-4 pb-4">
+                    <!-- left side -->
+                    <div class=" ">
+                        <div class="d rounded-xxl shadow-xss p-4 mt-4">
+                     <div class="Featured-Stories d-flex">
+                        <h5 class="ms-4">Featured Stories</h5>
+                        <span class="ms-auto ps-3 pe-3 py-1  fw-600 alert-primary rounded-xxl text-primary "> See more <i class="fa-solid fa-chevron-right font-xss"></i></span>
+                     </div>
+
+    <div id="owl-demo" class="owl-carousel owl-theme">
+              
+        <div class="item"> 
+            <i class="plus fa-solid fa-plus  text-gray font-md"></i>
+            <span class="mystory d-block fw-600   mt-0">My story</span>
+        </div> 
+       
+   
+     
+        <div class="item"> 
+            <img src="assets/images/user-22.png" alt="">
+             <span class="mystory d-block fw-600   mt-0">Ana</span>
+         </div> 
+         <div class="item"> 
+            <img src="assets/images/user-23.png" alt="">
+             <span class="mystory d-block fw-600   mt-0">Devid</span>
+         </div> 
+         <div class="item"> 
+            <img src="assets/images/user-24.png" alt="">
+             <span class="mystory d-block fw-600   mt-0">Anton</span>
+         </div> 
+         <div class="item"> 
+            <img src="assets/images/user-12.png" alt="">
+             <span class="mystory d-block fw-600   mt-0">Jane</span>
+         </div> 
+         <div class="item"> 
+            <img src="assets/images/user-21.png" alt="">
+             <span class="mystory d-block fw-600   mt-0">Wade</span>
+         </div> 
+         <div class="item"> 
+            <img src="assets/images/user-25.png" alt="">
+             <span class="mystory d-block fw-600   mt-0">Cabe</span>
+         </div> 
+  
+         <div class="item"> 
+            <img src="assets/images/user-22.png" alt="">
+             <span class="mystory d-block fw-600   mt-0">Ana</span>
+         </div> 
+         <div class="item"> 
+            <img src="assets/images/user-23.png" alt="">
+             <span class="mystory d-block fw-600   mt-0">Devid</span>
+         </div> 
+       
+      </div>
+  
+  </div>
+                      
+                        <!-- post -->
+                        <div class="rounded-xxl shadow-xss p-4 mt-4">
+                            <div class="d-flex align-items-center pb-2">
+                                <img src="assets/images/user-8.png"
+                                    class="w50" alt="user pic">
+                                <div class="ms-2">
+                                    <h3 class="font-xs m-0 text-capitalize
+                                        fw-600">Hurin Seary</h3>
+                                    <p class="text-gray fw-bold font-xss mt-2
+                                        m-0">2 hours ago</p>
+                                </div>
+                                <a href="#" class="font-xs me-3 bg-gray w50
+                                    center-item ms-auto">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </a>
+
+                            </div>
+                            <video src="assets/images/v-2.mp4"
+                                width="100%" class="rounded" controls></video>
+                            <p class=" mt-2 text-gray font-xs pt-2">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sunt hic blanditiis optio.
+                                Officiis enim excepturi porro magnam, sunt autem
+                                exercitationem!
+                                <a href="#" class="text-primary fw-bold">see
+                                    more</a>
+                            </p>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-regular fa-thumbs-up text-white
+                                        bg-primary-gradiant w35 center-item"></i>
+                                    <i class="fa-regular fa-heart text-white
+                                        bg-red-gradiant w35 center-item ms-1"></i>
+                                    <span class="ms-1 fw-600 font-xs d-none
+                                        d-md-inline-block">2.8k like</span>
+                                </div>
+                                <div class="ms-4 d-flex align-items-center">
+                                    <i class="fa-regular fa-comment fs-3"></i>
+                                    <span class="fw-600 ms-1 font-xs d-none
+                                        d-md-inline-block">22 comment</span>
+                                </div>
+                                <div class="ms-auto d-flex align-items-center">
+                                    <i class="fa-solid fa-share-nodes fs-3"></i>
+                                    <span class="fw-600 ms-1 font-xs d-none
+                                        d-md-inline-block">share</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end post -->
+
+
+                       
+
+                       
+                        <!-- post -->
+                        <div class="rev rounded-xxl shadow-xss p-4 mt-4">
+                            <div class="d-flex align-items-center pb-2">
+                                <img src="assets/images/user-8.png"
+                                    class="w50" alt="user pic">
+                                <div class="ms-2">
+                                    <h3 class="font-xs m-0 text-capitalize
+                                        fw-600">Hurin Seary</h3>
+                                    <p class="text-gray fw-bold font-xss mt-2
+                                        m-0">2 hours ago</p>
+                                </div>
+                                <a href="#" class="font-xs me-3 bg-gray w50
+                                    center-item ms-auto">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </a>
+
+                            </div>
+                            <video src="assets/images/v-1.mp4"
+                                width="100%" class="rounded" controls></video>
+                            <p class=" mt-2 text-gray font-xs pt-2">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Sunt hic blanditiis optio.
+                                Officiis enim excepturi porro magnam, sunt autem
+                                exercitationem!
+                                <a href="#" class="text-primary fw-bold">see
+                                    more</a>
+                            </p>
+                            <div class="d-flex mt-3 align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-regular fa-thumbs-up text-white
+                                        bg-primary-gradiant w35 center-item"></i>
+                                    <i class="fa-regular fa-heart text-white
+                                        bg-red-gradiant w35 center-item ms-1"></i>
+                                    <span class="ms-1 fw-600 font-xs d-none
+                                        d-md-inline-block">2.8k like</span>
+                                </div>
+                                <div class="ms-4 d-flex align-items-center">
+                                    <i class="fa-regular fa-comment fs-3"></i>
+                                    <span class="fw-600 ms-1 font-xs d-none
+                                        d-md-inline-block">22 comment</span>
+                                </div>
+                                <div class="ms-auto d-flex align-items-center">
+                                    <i class="fa-solid fa-share-nodes fs-3"></i>
+                                    <span class="fw-600 ms-1 font-xs d-none
+                                        d-md-inline-block">share</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end post -->
+                        <!-- loader -->
+                        <div class="bg-white p-3 shadow-xss d-flex
+                            justify-content-center rounded-xxl mt-2">
+                            <div class="dots"></div>
+                        </div>
+                    </div>
+                 
+                </div>
+
+            </div>
+        </section>
+        <!-- end main-content -->
+
+        <!-- start chat-contact -->
+        <div class="chat-contacts active position-fixed d-none d-lg-block p-3
+            bg-white">
+            <div class="content-card rounded-xxl shadow-xss p-3">
+                <p class="text-uppercase text-gray">contacts</p>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-8.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2"> Hurin Seary</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-7.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2">Victor Exrixon</h3>
+                        <span class="ms-auto rounded-circle p-1 bg-success"></span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-6.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2">
+                            Surfiya Zakir</h3>
+                        <span class="ms-auto rounded-circle p-1 bg-warning"></span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-5.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2">Goria Coast</h3>
+                        <span class="ms-auto rounded-circle p-1 bg-danger"></span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <img src="assets/images/user-4.png" alt="user
+                            image" class="w35">
+                        <h3 class="ms-2">Seary Victor</h3>
+                        <span class="ms-auto rounded-circle p-1 bg-success"></span>
+                    </li>
+                  
+
+                </ul>
+
+                <p class="text-uppercase text-gray">groups</p>
+                <ul class="list-unstyled">
+
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-blue-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">se</span>
+                        <h3 class="ms-2">Studio Express</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-gold-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">ad</span>
+                        <h3 class="ms-2">Armany Design</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-red-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">de</span>
+                        <h3 class="ms-2">De fabous</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                  
+                </ul>
+
+                <p class="text-uppercase text-gray">pages</p>
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-blue-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">as</span>
+                        <h3 class="ms-2">Armany Seary</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                    <li class="d-flex align-items-center item mb-2">
+                        <span class="w35 text-uppercase bg-gold-gradiant
+                            text-white d-flex align-items-center
+                            justify-content-center fw-bolder">ei</span>
+                        <h3 class="ms-2">Entropio Inc</h3>
+                        <span class="ms-auto badge bg-primary rounded-circle">2</span>
+                    </li>
+                  
+                </ul>
+
+            </div>
+        </div>
+        <!-- end chat-contact -->
+
+        <!-- bootstrap -->
+        <script src="vendor/js/bootstrap.min.js"></script>
+        <!-- jquery -->
+        <script src="vendor/js/jquery-3.6.4.min.js"></script>
+        <!-- lightbox -->
+        <script src="vendor/js/lightbox.min.js"></script>
+        <!-- owl -->
+        <script src="vendor/js/owl.carousel.min.js"></script>
+        <!-- custmoized -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main3.js"></script>
+
+
+
+
+    </body>
+</html>

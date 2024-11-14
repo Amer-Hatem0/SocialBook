@@ -1,0 +1,103 @@
+li{
+    list-style: none;
+    display: flex;
+}
+.text-grey-500 {
+    color: #adb5bd;
+    font-weight: 500;
+}
+
+
+
+.font-xssss{
+    font-size: 12px;
+}
+.email-user{
+    display: flex;
+}
+.text-grey-900{
+    color: #232425;
+    font-weight:800;
+}
+.email-message  .li1{
+    display: flex;
+
+}
+
+.email-subject , .email-text , .email-time{
+    display: flex;
+    align-items: center;
+}
+.ii{
+    color: #adb5bd;
+margin-right: 30px;
+}
+.font-xss {
+    font-size: 13px;
+    color: #fe9431 !important;
+}
+.point{
+    padding: 5.5px;
+    border-radius: 100%;
+   background-color:#0bba69 !important;
+  
+}
+ul li:nth-child(2) .point{
+    padding: 5.5px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #0575e6, #021b79) !important;
+
+  
+}ul li:nth-child(3) .point{
+    padding: 5.5px;
+    border-radius: 100%;
+   background-color:#ba830b !important;
+  
+}ul li:nth-child(6) .point{
+    padding: 5.5px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #0575e6, #021b79) !important;
+
+  
+}ul li:nth-child(7) .point{
+    padding: 5.5px;
+    border-radius: 100%;
+   background-color:#ba830b !important;
+  
+}
+
+
+
+ul li:nth-child(9) .point{
+    padding: 5.5px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #0575e6, #021b79) !important;
+
+  
+}ul li:nth-child(10) .point{
+    padding: 5.5px;
+    border-radius: 100%;
+   background-color:#ba830b !important;
+  
+}ul li:nth-child(12) .point{
+    padding: 5.5px;
+    border-radius: 100%;
+    background: linear-gradient(to right, #0575e6, #021b79) !important;
+
+  
+}ul li:nth-child(13) .point{
+    padding: 5.5px;
+    border-radius: 100%;
+   background-color:#ba830b !important;
+  
+}
+.bg-blue-gradiant {
+    background: linear-gradient(to right, #7ebdfb, #2955f7) !important;
+}
+.write{
+    font-size: 16px !important;
+    text-align: center;
+}
+.ss{
+    margin-left: 35px !important;
+}

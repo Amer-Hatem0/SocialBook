@@ -1,0 +1,25 @@
+.font-xxl{
+    font-size: 30px !important;
+    font-weight: 700;
+}
+.font-xssss{
+    font-size: 14px;
+    font-weight: 650;
+    color: rgb(149, 147, 147) !important;
+}
+.font-xsss{
+    font-size: 13px;
+    color: #000;
+    font-weight: 650;
+    
+}
+.middle-wrap li i{
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}

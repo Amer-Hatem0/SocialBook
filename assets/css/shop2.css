@@ -1,0 +1,178 @@
+
+/* font-family: 'Fredoka', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+.main-content .row .info h2{
+ font-weight: 700;
+}
+.w15{
+    width: 15px;
+}
+.font-xssss{
+    font-size: 12px;
+    font-weight: 600;
+}
+.text-grey-500{
+ color:    #9ba1a6;
+ font-weight: 600;
+ font-size: 13px;
+}
+.font-xl{
+    font-size: 35px;
+    font-weight: 800;
+    color: #05f;
+}
+.col
+{
+    color: #05f;
+}
+.fw-700{
+    font-size: 20px;
+    font-weight: 800;
+}
+.text-day{
+
+    display: block;
+   
+    color:    #969ca1;
+    font-weight: 700;
+}
+.timer{
+  
+
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+
+}
+.time-count{
+    padding-right: 55px;
+}
+.text-time{
+    font-size: 30px;
+    font-weight: 800;
+}
+.fa-heart{
+    color: #969ca1;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #dce2e7;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.w-50{
+    width: 50px;
+}
+li{
+  list-style: none;
+}
+.loc{
+
+    padding: 10px;
+}
+.loc .s2{
+display: flex;
+justify-content: end;
+margin-top: -20px;
+}
+.loc span{
+    color: #969ca1;
+    font-size: 14px;
+}
+.loc .s1{
+    font-family: 'Montserrat', sans-serif; 
+      font-size: 16px;
+    font-weight: 600;
+    color: #232323;
+}
+.img1 img{
+    width: 100% !important;
+    display: block;
+   
+}
+.img1 {
+    width: 80px !important;
+    padding: 0;
+    margin: 0;
+
+   
+
+   
+}
+.imgin1,.imgin2,.imgin3,.imgin4{
+     opacity: .5;
+}
+.op{
+    opacity: 1;
+}
+.cc{
+    display: flex;
+}
+.img22 img{
+    width: 120%;
+   
+
+
+}
+.bttn  .love{
+    color: white;
+    background-color: #f34949;
+}
+@media  screen and (max-width: 768px) {
+    .img22 {
+width: 80% !important;
+
+    }
+    .img1{
+        width: 60px !important;
+    }
+}
+
+.drop{
+    padding: 15px;
+   
+    text-align: left;
+    width: 300px !important;
+    background-color: #ffffff;
+    position: absolute;
+    top: 80px;
+    left: -250px;
+    border-radius: 10px;
+    box-shadow: 0 30px 50px -12px rgba(0,0,0,0.25);
+    transition: all 0.5s ease-in-out;
+}
+.drop p{
+ font-size: 18px;
+ font-weight: 650;
+ margin-left: 10px;
+
+}
+.drop ul li {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .drop ul li:hover {
+    background-color: #f2f2f2;
+  }
+.ll h3{
+  font-size: 14px;
+  font-weight: 600;
+
+}
+.ll span{
+    font-size: 12px;
+    font-weight: 500;
+  
+  }
+.ll img{
+  width: 50px;
+  height: 50px;
+margin-left: -15px;
+
+  
+  }

@@ -1,0 +1,46 @@
+.ii i {
+    padding: 12px;
+    font-size: 18px; color: var(--text-gray);
+    background-color: var(--bg-gray);
+border-radius: 4px;
+}
+.h3000{
+  height: 95%;
+} .vid{
+height: 380px !important;
+}
+
+.search{
+  width: fit-content;
+ 
+}
+.main-content .row .card .content{
+
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+  
+}.main-content .row .card  img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+  
+}
+.main-content .row .card  video{
+   height: 301px;
+    width: 100%;
+    object-fit: cover;
+border-radius: 10px;
+  
+}
+.bg-gradiant-bottom::after {
+    content: "";
+    background: linear-gradient(180deg,rgba(0,0,0,.01) 60%,rgba(0,0,0,.9) 100%);
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }

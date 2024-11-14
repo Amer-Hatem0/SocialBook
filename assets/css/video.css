@@ -1,0 +1,61 @@
+/* font-family: 'Fredoka', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+#owl-demo .item{
+ 
+ margin-left: 15px;
+  margin-top: 20px;
+    text-align: center;
+
+   width: fit-content !important;
+ 
+  }
+  .owl-item {
+    border-radius: 15px;
+    height: fit-content;
+    width:fit-content !important;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-left: 10px;
+}
+
+.main-content .item .plus {
+    padding: 20px;
+    border-radius: 50%;
+  border: 2px solid;
+
+    border-color: #888;
+}
+.main-content .item span{
+    color: #888 !important;
+}.main-content .item img{
+   border-radius: 50%;
+   width: 60px;
+   height: 60px;
+   border: 2px solid;
+   border-color: #E50202;
+  
+   
+}
+.main-content .Featured-Stories span{
+    background-color: #d2e3ff;
+
+}
+.main-content .Featured-Stories h5{
+    font-family: 'Montserrat', sans-serif;
+}
+.rev{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+   .active{
+    transform: translateY(0px) !important;
+    opacity: 1 !important;
+  }

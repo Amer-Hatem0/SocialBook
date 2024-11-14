@@ -1,0 +1,222 @@
+/* font-family: 'Fredoka', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+.loading{
+    margin-top: -30px;
+    position: fixed;
+    height: 110vh;
+    background-color: #005fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 99999;
+}
+.loaderpro {
+    width: 320px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    position: relative;
+    background: #FFF;
+    box-sizing: border-box;
+  }
+  .loaderpro::after {
+    content: '';  
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    top: 15px;
+    left: 15px;
+    position: absolute;
+    background-image: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.5) 50%, transparent 80%), radial-gradient(circle 28px at 28px 28px, #DDD 99%, transparent 0), linear-gradient(#DDD 24px, transparent 0), linear-gradient(#DDD 18px, transparent 0), linear-gradient(#DDD 66px, transparent 0);
+    background-repeat: no-repeat;
+    background-size: 75px 130px, 55px 56px, 160px 30px, 260px 20px, 290px 56px;
+    background-position: 0% 0, 0 0, 70px 5px, 70px 38px, 0px 66px;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      background-position: 0% 0, 0 0, 70px 5px, 70px 38px, 0px 66px;
+    }
+    100% {
+      background-position: 150% 0, 0 0, 70px 5px, 70px 38px, 0px 66px;
+    }
+  }
+  
+
+.font-sm{
+    font-size: 20px;
+    font-weight: 700;
+
+    padding-left: 50px;
+}
+.text-grey-500{
+    font-weight: 600;
+    color: #7e7a7a;
+    font-size: 12px;
+}
+.inf{
+margin-right: -290px !important;
+margin-top: -40px;
+
+    
+}
+.aaaa{
+    margin-left: -150px !important;
+}
+.vv{
+
+    display: flex;
+    justify-content:space-around;
+  
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.text-white{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.ii i {
+    padding: 17px;
+    font-size: 18px; 
+    color: #626262;
+    background-color: var(--bg-gray);
+border-radius: 8px;
+}
+.rounded-xxl >img {
+    border-radius: 20px !important;
+    width: 100%;
+    height: 300px;
+}
+
+.chart-container .s78 {
+
+ padding: 10px;
+ border-radius: 50%;
+ border: 5px solid #a7d212;
+
+ border-left-color:rgb(153, 151, 151) ;
+}
+.font-xsss {
+    font-size: 12px;
+    font-weight: 700;
+}
+.font-xssss{
+    font-size: 11px;
+    font-weight: 600;
+}
+.text-grey-500{
+    color: rgb(153, 151, 151) ;
+}
+.text-grey-900{
+    color: #212121;
+    font-weight: 800;
+    font-size: 14px;
+}
+.font-lg{
+    margin-top: 2.5px;
+    color: rgb(153, 151, 151) ;
+    font-size: 16px;
+}
+.ab{
+    
+    border-bottom: 1px solid #e8e5e5;
+}
+.bg-success{
+    display: flex;
+    align-items: center;
+}
+.card-body h4{
+    font-weight: 800;
+    font-size: 12px;
+}
+.card-body h4 span{
+    font-weight: 500;
+    font-size: 11px;
+}
+.aa{
+    color: #000;
+  font-size: 12px;
+  font-weight: 700;
+border-bottom: 2px solid #000;
+   
+}
+.am{
+    font-size: 16px !important;
+}
+.imggg img {
+      z-index: 0;
+   
+}
+
+figure {
+    width: 150px !important;
+  
+    top:-70px;  left: 50px;
+}
+@media  screen and (max-width: 768px) {
+    .imggg img {
+        height: 150px;
+       background-image: url(../images/e-2.jpg) !important;
+       z-index: 1;
+    }
+  
+
+    .main-content .avatar {
+        width: 70px !important;
+        top:-50px;
+         left: 50px;
+      
+    }
+    .aaaa h4 {
+   
+        margin-left: 90px !important;
+       
+        font-size: 14px !important;
+margin-top: -5px !important;
+
+       display: block !important;
+
+    }
+    .inf a , .inf a i{
+     
+     
+        padding: 10px !important;
+    }
+    .inf{
+            margin-top: 1px ;
+            margin-bottom: 20px;
+         
+    }
+    .inf{
+        margin-right: 0px !important;
+      
+        
+            
+        }
+        .aaaa{
+            margin-left: 0 !important;
+        }
+   
+    .vv{
+        display: block !important;
+     
+    }
+}
+
+.rev{
+    position: relative;
+    transform: translatex(-150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+   .active{
+    transform: translatex(0px) !important;
+    opacity: 1 !important;
+  }

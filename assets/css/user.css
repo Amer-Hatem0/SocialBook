@@ -1,0 +1,54 @@
+/* font-family: 'Fredoka', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+
+.card1{
+ 
+    width:100%;
+    height:100%;
+ background-image: url(../images/bb-16.png);
+ background-size: cover;
+ background-position: center ;
+ z-index: 0;
+position: relative;
+
+}
+.crad1body{
+    width: 100%;
+    height: 50%;
+    background-color: #fff;
+    z-index: 0;
+    position: absolute;
+bottom: 0;
+
+
+
+}
+.crad1body img{
+border: 4px solid #fff;
+margin-top: -40px;
+margin-left: 23px;
+width: 70px !important;
+height: 70px;
+}
+  h3{
+    color:#111;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-xsss{
+    font-size: 14px;
+}
+.font-xsssss{
+    font-size: 10px;
+}
+.ii i {
+    padding: 12px;
+    font-size: 18px; color: var(--text-gray);
+    background-color: var(--bg-gray);
+border-radius: 4px;
+}
